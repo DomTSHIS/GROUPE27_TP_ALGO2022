@@ -137,6 +137,14 @@ class Triangle(Forme_Geometrique): #Création de la classe triangle
 if __name__=='__main__': #Pour connaitre la memoire de l'objet
 
     a_1 = Cercle(4)
+    print(a_1.r)
+    print(a_1.surface())
+
+    b = Rectangle(12,16)
+    print(b.L)
+    print(b.l)
+
+    b.surface()
 
     a_1.sol_cercle()
 
