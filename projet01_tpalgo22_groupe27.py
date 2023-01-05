@@ -136,43 +136,40 @@ class Triangle(Forme_Geometrique): #Création de la classe triangle
 
 if __name__=='__main__': #Pour connaitre la memoire de l'objet
 
-    #batterie de test pour le cercle
     a_1 = Cercle(4)
-
-    print("le rayon du cercle est de :", a_1.r )
-
-    print(a_1.surface())
-
-    print(a_1.perimetre())
 
     a_1.sol_cercle()
 
-    #batterie de test pour le rectangle
-    b = Rectangle(16,12)
-
-    print("la longueur du rectangle vaut :", b.L)
-
-    print("la largeur du rectangle vaut :", b.l)
-
-    print(b.surface())
-
-    b.sol_rectangle()
-
-    #batterie de test pour le carre
-    c = Rectangle.Carre(6)
-
-    print("la côté du carré vaut :", c.L)
-    print("la surface du carré vaut :", c.surface())
-    print("la surface du perimetre vaut :", c.perimetre())
+    print("\n La batterie de test complete...")
     
-    #batterie de tesst pour le triangle
-    tr = Triangle(5,8,98)
-
-    print("les côtés du triangle valent respectivement :", tr.x , tr.y , tr.z)
-
-    print(tr.surface())
-
-    print(tr.perimetre())
-
-    tr.sol_triangle()
-
+    print("\nTest rectangle\n")
+    r = Rectangle(8, 4)
+    print(r.surface())
+    print(r.perimetre())
+    r.sol_rectangle()
+   
+    print("\nTest carré\n")
+    car  = Rectangle.Carre(12)
+    print("la surface du carré vaut:",car.surface(),"m²")
+    print("le périmètre du carré vaut",car.perimetre(),"m")
+    
+    print("\nTest cercle\n")
+    
+    rond = Cercle(5)
+    print(rond.perimetre())
+    print(rond.surface())
+    rond.sol_cercle()
+    
+    print("\nTest triangle\n")
+    
+    tri = Triangle(3, 6, 9)
+    print(tri.perimetre())
+    print(tri.surface())
+    tri.sol_triangle()
+    
+    print("\nTest triangle Rectangle\n")
+   
+    Trec = Triangle.Triangle_Rectangle(2,4,8)
+    print("le périmetre du triangle réctangle vaut :", Trec.perimetre(),"m")
+    print("la surface du triangle réctangle vaut : ",Trec.surface(),"m²")
+    
