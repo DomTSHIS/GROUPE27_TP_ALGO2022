@@ -148,5 +148,10 @@ if __name__=='__main__': #Pour connaitre la memoire de l'objet
 
     a_1.sol_cercle()
 
+    tr = Triangle(5,8,98)
+    print(tr.x , tr.y , tr.z)
+
+    print(tr.surface())
+    print(tr.perimetre())
     
 
