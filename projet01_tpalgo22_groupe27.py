@@ -5,7 +5,7 @@ from math import pi #dans le module math,on importe l'opérateur pi
 
 from math import sqrt #dans le module math,on importe l'opérateur racine carré
 
-time_start = time.time()
+start_time = time.time()
 
 class Forme_Geometrique: #création de la classe Forme_Géometrique
 
