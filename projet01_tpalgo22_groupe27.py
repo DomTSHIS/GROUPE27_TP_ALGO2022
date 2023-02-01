@@ -1,8 +1,11 @@
-from abc import abstractmethod, ABCMeta #on importe ce module pour l'utilisation de la methode abstraite
+import time
 
+from abc import abstractmethod, ABCMeta #on importe ce module pour l'utilisation de la methode abstraite
 from math import pi #dans le module math,on importe l'opérateur pi
 
 from math import sqrt #dans le module math,on importe l'opérateur racine carré
+
+time_start = time.time()
 
 class Forme_Geometrique: #création de la classe Forme_Géometrique
 
@@ -172,4 +175,8 @@ if __name__=='__main__': #Pour connaitre la memoire de l'objet
     Trec = Triangle.Triangle_Rectangle(2,4,8)
     print("le périmetre du triangle réctangle vaut :", Trec.perimetre(),"m")
     print("la surface du triangle réctangle vaut : ",Trec.surface(),"m²")
+    
+    end_time = time.time()
+    
+    print("le temps d'execution est:", end_time - start_time, "secondes")
     
