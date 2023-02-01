@@ -178,5 +178,5 @@ if __name__=='__main__': #Pour connaitre la memoire de l'objet
     
     end_time = time.time()
     
-    print("le temps d'execution est:", end_time - start_time, "secondes")
+    print("le temps d'execution est :", end_time - start_time, "secondes")
     
